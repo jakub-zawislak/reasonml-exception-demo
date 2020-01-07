@@ -1,6 +1,6 @@
 # ReasonML uncaught exception demo
 
-[StackOverflow question](https://stackoverflow.com/questions/59619235/how-to-catch-the-failure-exception-raised-during-number-parsing-in-reasonml)).
+[StackOverflow question](https://stackoverflow.com/questions/59619235/how-to-catch-the-failure-exception-raised-during-number-parsing-in-reasonml)
 
 I have created this boilerplate using `bsb -init -theme react-hooks` and then I have removed the react-related code.
 
