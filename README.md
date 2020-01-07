@@ -19,9 +19,8 @@ Open a new web page to [http://localhost:8000/](http://localhost:8000/).
 
 If running in a browser there is uncaught `Failure` exception.
 
-There is no problem with running it by node: `node src/index.bs.js`.
-
-In `index.bs.js` there is comparison:
+In [index.bs.js](https://github.com/jakub-zawislak/reasonml-exception-demo/blob/master/src/index.bs.js)
+there is a comparison:
 
 ```js
 exn[0] === Caml_builtin_exceptions.failure
@@ -34,4 +33,9 @@ Both `exn[0]` and `Caml_builtin_exceptions.failure` are `["Failure", -2, tag: 24
 console.log(exn[0])                                     // ["Failure", -2, tag: 248]
 console.log(Caml_builtin_exceptions.failure)            // ["Failure", -2, tag: 248]
 console.log(exn[0] === Caml_builtin_exceptions.failure) // false
+```
+
+There is no problem with running it by node:
+```sh
+node src/index.bs.js
 ```
