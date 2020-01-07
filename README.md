@@ -13,7 +13,7 @@ npm run server
 npm start
 ```
 
-Open a new web page to `http://localhost:8000/`.
+Open a new web page to [http://localhost:8000/](http://localhost:8000/).
 
 ## Issue
 
@@ -27,11 +27,11 @@ In `index.bs.js` there is comparison:
 exn[0] === Caml_builtin_exceptions.failure
 ```
 
-Both `exn[0]` and `Caml_builtin_exceptions.failure` are `["Failure", -2, tag: 248]` but the comparison
-of these doesn't return `true`.
+Both `exn[0]` and `Caml_builtin_exceptions.failure` are `["Failure", -2, tag: 248]`,
+ but the comparison of these doesn't return `true`.
 
 ```js
-console.log(exn[0]) // ["Failure", -2, tag: 248]
-console.log(Caml_builtin_exceptions.failure) // ["Failure", -2, tag: 248]
+console.log(exn[0])                                     // ["Failure", -2, tag: 248]
+console.log(Caml_builtin_exceptions.failure)            // ["Failure", -2, tag: 248]
 console.log(exn[0] === Caml_builtin_exceptions.failure) // false
 ```
